@@ -286,8 +286,11 @@
                                 <annotationProcessor>org.checkerframework.checker.index.IndexChecker</annotationProcessor>
                             </annotationProcessors>
                             <compilerArgs>
-                            <!-- <arg>-Awarns</arg> -->      
+                                <arg>-Awarns</arg>    
                                 <arg>-AskipDefs=(Test|BaseCase|DataSet|TestCase|PacketWithParser|OtherPacket|DummyGenerator|Accessors)$</arg>
+                                <arg>-Ainfer=ajava</arg>
+                                <arg>-AshowPrefixInWarningMessages</arg>
+                                <arg>-Aajava=/tmp/WPITEMP-araknemu</arg> 
                             </compilerArgs>
                         </configuration>
                     </plugin>
